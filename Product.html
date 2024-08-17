@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" type="text/css" href="./css/Product.css">
+    <link rel="stylesheet" type="text/css" href="./css/HeaderFooter.css">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick Slider CSS & JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </head>
+  <body>
+    <br />
+    <br />
+    <nav class="navbar"></nav>
+    <div>
+      <div class=" row-base" style="display: -webkit-flex;">
+        <div class="search-leftContainer column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+          <section>
+            <div class="condition-render-verticalFilters condition-render-boundary-top" style="top: 0px; bottom: auto;">
+              <div class="vertical-filters-filters header-container">
+                <span class="header-title">FILTERS</span>
+              </div>
+              <div class="vertical-filters-filters">
+                <ul id="genderList" class="gender-list">
+                  <li>
+                    <label class="common-customRadio gender-label" for="menRadio">
+                      <input type="radio" id="menRadio" name="gender" value="men">
+                      Men <div class="common-radioIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customRadio gender-label" for="womenRadio">
+                      <input type="radio" id="womenRadio" name="gender" value="women">
+                      Women <div class="common-radioIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customRadio gender-label" for="boysRadio">
+                      <input type="radio" id="boysRadio" name="gender" value="boys">
+                      Boys <div class="common-radioIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customRadio gender-label" for="girlsRadio">
+                      <input type="radio" id="girlsRadio" name="gender" value="girls">
+                      Girls <div class="common-radioIndicator"></div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="vertical-filters-filters categories-container">
+                <span class="vertical-filters-header">Categories</span>
+                <div class="filter-search-filterSearchBox">
+                  <input type="text" class="filter-search-inputBox filter-search-hidden" placeholder="Search for Categories">
+                  <span class="myntraweb-sprite filter-search-iconSearch sprites-search"></span>
+                </div>
+                <ul class="categories-list">
+                  <li>
+                    <label class="common-customCheckbox vertical-filters-label">
+                      <input type="checkbox" value="Tshirts">
+                      Tshirts <span class="categories-num">(306)</span>
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customCheckbox vertical-filters-label">
+                      <input type="checkbox" value="Jeans">
+                      Jeans <span class="categories-num">(104)</span>
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customCheckbox vertical-filters-label">
+                      <input type="checkbox" value="Shirts">
+                      Shirts <span class="categories-num">(34)</span>
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customCheckbox vertical-filters-label">
+                      <input type="checkbox" value="Shorts">
+                      Shorts <span class="categories-num">(15)</span>
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customCheckbox vertical-filters-label">
+                      <input type="checkbox" value="Trousers">
+                      Trousers <span class="categories-num">(25)</span>
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customCheckbox vertical-filters-label">
+                      <input type="checkbox" value="Tops">
+                      Tops <span class="categories-num">(11)</span>
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customCheckbox vertical-filters-label">
+                      <input type="checkbox" value="Dresses">
+                      Dresses <span class="categories-num">(10)</span>
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customCheckbox vertical-filters-label">
+                      <input type="checkbox" value="Skirts">
+                      Skirts <span class="categories-num">(8)</span>
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                </ul>
+                <div class="categories-more">
+                  <span>+3 more</span>
+                </div>
+              </div>
+              
+              <div class="vertical-filters-filters brand-container">
+                <span class="vertical-filters-header">Brand</span>
+                <ul class="brand-list">
+                  <li>
+                    <label class="vertical-filters-label common-customCheckbox">
+                      <input type="checkbox" value="LC Waikiki">
+                      LC Waikiki 
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="vertical-filters-label common-customCheckbox">
+                      <input type="checkbox" value="OVS">
+                      OVS 
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="vertical-filters-label common-customCheckbox">
+                      <input type="checkbox" value="Arrow Sport">
+                      Arrow Sport 
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="vertical-filters-label common-customCheckbox">
+                      <input type="checkbox" value="ROADSTER">
+                      ROADSTER 
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+              
+                  <li>
+                    <label class="vertical-filters-label common-customCheckbox">
+                      <input type="checkbox" value="JS Collection">
+                      JS Collection 
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="vertical-filters-label common-customCheckbox">
+                      <input type="checkbox" value="Tokyo Talkies">
+                      Tokyo Talkies 
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="vertical-filters-label common-customCheckbox">
+                      <input type="checkbox" value="Athena">
+                      Athena 
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="vertical-filters-label common-customCheckbox">
+                      <input type="checkbox" value="HELLCAT">
+                      HELLCAT 
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="vertical-filters-label common-customCheckbox">
+                      <input type="checkbox" value="H&M">
+                      H&M 
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="vertical-filters-label common-customCheckbox">
+                      <input type="checkbox" value="MINI KLUB">
+                      MINI KLUB 
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="vertical-filters-label common-customCheckbox">
+                      <input type="checkbox" value="Tommy Hilfiger">
+                      Tommy Hilfiger 
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="vertical-filters-label common-customCheckbox">
+                      <input type="checkbox" value="H$M">
+                      H$M 
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="vertical-filters-label common-customCheckbox">
+                      <input type="checkbox" value="Stylo Bug">
+                      Stylo Bug 
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <!-- Add other brands similarly -->
+                </ul>
+                
+              </div>
+              <div class="vertical-filters-filters">
+                <span class="vertical-filters-header">Price</span>
+                <ul class="price-list">
+                  <li>
+                    <label class="common-customCheckbox vertical-filters-label">
+                      <input type="checkbox" class="price-input" value="399.0 TO 15.0">
+                      Rs. 399 to Rs. 1500 <span class="price-num">(449)</span>
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customCheckbox vertical-filters-label">
+                      <input type="checkbox" class="price-input" value="15.0 TO 2675.0">
+                      Rs. 1500 to Rs. 2675 <span class="price-num">(77)</span>
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customCheckbox vertical-filters-label">
+                      <input type="checkbox" class="price-input" value="2675.0 TO 3813.0">
+                      Rs. 2675 to Rs. 3813 <span class="price-num">(19)</span>
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customCheckbox vertical-filters-label">
+                      <input type="checkbox" class="price-input" value="3813.0 TO 4951.0">
+                      Rs. 3813 to Rs. 4951 <span class="price-num">(3)</span>
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="vertical-filters-filters">
+                <span class="vertical-filters-header">Color</span>
+                <div class="filter-search-filterSearchBox">
+                  <input type="text" class="filter-search-inputBox filter-search-hidden" placeholder="Search for Color">
+                  <span class="myntraweb-sprite filter-search-iconSearch sprites-search"></span>
+                </div>
+                <ul>
+                  <li class="colour-listItem">
+                    <label class="common-customCheckbox" data-count="101">
+                      <span data-colorhex="black" class="colour-label colour-colorDisplay" style="background-color: rgb(54, 69, 79);"></span>
+                      Black <span class="colour-num">(101)</span>
+                      <input type="checkbox" value="Black">
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li class="colour-listItem">
+                    <label class="common-customCheckbox" data-count="77">
+                      <span data-colorhex="white" class="colour-label colour-colorDisplay" style="background-color: rgb(255, 255, 255);"></span>
+                      White <span class="colour-num">(77)</span>
+                      <input type="checkbox" value="White">
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li class="colour-listItem">
+                    <label class="common-customCheckbox" data-count="74">
+                      <span data-colorhex="blue" class="colour-label colour-colorDisplay" style="background-color: rgb(0, 116, 217);"></span>
+                      Blue <span class="colour-num">(74)</span>
+                      <input type="checkbox" value="Blue">
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li class="colour-listItem">
+                    <label class="common-customCheckbox" data-count="56">
+                      <span data-colorhex="navy blue" class="colour-label colour-colorDisplay" style="background-color: rgb(60, 68, 119);"></span>
+                      Navy Blue <span class="colour-num">(56)</span>
+                      <input type="checkbox" value="Navy Blue">
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li class="colour-listItem">
+                    <label class="common-customCheckbox" data-count="26">
+                      <span data-colorhex="green" class="colour-label colour-colorDisplay" style="background-color: rgb(94, 177, 96);"></span>
+                      Green <span class="colour-num">(26)</span>
+                      <input type="checkbox" value="Green">
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li class="colour-listItem">
+                    <label class="common-customCheckbox" data-count="22">
+                      <span data-colorhex="grey" class="colour-label colour-colorDisplay" style="background-color: rgb(159, 168, 171);"></span>
+                      Grey <span class="colour-num">(22)</span>
+                      <input type="checkbox" value="Grey">
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                  <li class="colour-listItem">
+                    <label class="common-customCheckbox" data-count="22">
+                      <span data-colorhex="beige" class="colour-label colour-colorDisplay" style="background-color: rgb(232, 230, 207);"></span>
+                      Beige <span class="colour-num">(22)</span>
+                      <input type="checkbox" value="Beige">
+                      <div class="common-checkboxIndicator"></div>
+                    </label>
+                  </li>
+                </ul>
+                <div class="colour-more">
+                  <span>+23 more</span>
+                </div>
+              </div>
+              <div class="vertical-filters-filters">
+                <span class="vertical-filters-header">Discount Range</span>
+                <ul class="discount-list">
+                  <li>
+                    <label class="common-customRadio vertical-filters-label">
+                      <input type="radio" class="discount-input" name="discount-product" value="10.0 TO 100.0">
+                      10% and above <div class="common-radioIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customRadio vertical-filters-label">
+                      <input type="radio" class="discount-input" name="discount-product" value="20.0 TO 100.0">
+                      20% and above <div class="common-radioIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customRadio vertical-filters-label">
+                      <input type="radio" class="discount-input" name="discount-product" value="30.0 TO 100.0">
+                      30% and above <div class="common-radioIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customRadio vertical-filters-label">
+                      <input type="radio" class="discount-input" name="discount-product" value="50.0 TO 100.0">
+                      50% and above <div class="common-radioIndicator"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="common-customRadio vertical-filters-label">
+                      <input type="radio" class="discount-input" name="discount-product" value="60.0 TO 100.0">
+                      60% and above <div class="common-radioIndicator"></div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          
+        </div>
+        <div class="search-rightContainer column-base" style="-webkit-box-flex: 1; flex: 1 1 0%;">
+          <div id="desktopSearchResults">
+            <div class=" row-base" style="display: -webkit-flex;">
+              <section class="horizontal-filters-base">
+                <div>
+                  <div class="horizontal-filters-sortContainer">
+                      <div>
+                          <div>
+                            <div class="sort-sortBy">
+                              Sort by: 
+                              <span id="selectedSort">Recommended</span>
+                              <span class="myntraweb-sprite sort-downArrow sprites-downArrow"></span>
+                              <ul class="sort-list">
+                                  <li>
+                                      <label class="sort-label">
+                                          <input type="radio" name="sort-option" value="recommended" onchange="sortProducts(this.value)">
+                                          Recommended
+                                      </label>
+                                  </li>
+                                  <li>
+                                      <label class="sort-label">
+                                          <input type="radio" name="sort-option" value="new" onchange="sortProducts(this.value)">
+                                          What's New
+                                      </label>
+                                  </li>
+                                  <li>
+                                      <label class="sort-label">
+                                          <input type="radio" name="sort-option" value="popularity" onchange="sortProducts(this.value)">
+                                          Popularity
+                                      </label>
+                                  </li>
+                                  <li>
+                                      <label class="sort-label">
+                                          <input type="radio" name="sort-option" value="discount" onchange="sortProducts(this.value)">
+                                          Better Discount
+                                      </label>
+                                  </li>
+                                  <li>
+                                      <label class="sort-label">
+                                          <input type="radio" name="sort-option" value="price_asc" onchange="sortProducts(this.value)">
+                                          Price: Low to High
+                                      </label>
+                                  </li>
+                                  <li>
+                                      <label class="sort-label">
+                                          <input type="radio" name="sort-option" value="price_desc" onchange="sortProducts(this.value)">
+                                          Price: High to Low
+                                      </label>
+                                  </li>
+                                  <li>
+                                      <label class="sort-label">
+                                          <input type="radio" name="sort-option" value="customer_rating" onchange="sortProducts(this.value)">
+                                          Customer Rating
+                                      </label>
+                                  </li>
+                              </ul>
+                          </div>
+              
+                          </div>
+                      </div>
+                  </div>
+                  <div class="atsa-base">
+                      <ul class="atsa-filters">
+                          <li>
+                              <label class="">
+                                  <input type="radio" value="Bundles">
+                                  <h4 class="atsa-title">
+                                      Bundles
+                                  </h4>
+                                  <span class="atsa-downArrow sprites-arrowDownBold myntraweb-sprite"></span>
+                              </label>
+                          </li>
+                          <li>
+                              <label class="">
+                                  <input type="radio" value="Country of Origin">
+                                  <h4 class="atsa-title">
+                                      Country of Origin
+                                  </h4>
+                                  <span class="atsa-downArrow sprites-arrowDownBold myntraweb-sprite"></span>
+                              </label>
+                          </li>
+                          <li>
+                              <label class="">
+                                  <input type="radio" value="size_facet">
+                                  <h4 class="atsa-title">
+                                      Size
+                                  </h4>
+                                  <span class="atsa-downArrow sprites-arrowDownBold myntraweb-sprite"></span>
+                              </label>
+                          </li>
+                          <li></li>
+                      </ul>
+                      <div class="atsa-atsaFiltersOptionCtn">
+                          <ul class="atsa-values atsa-hidden"></ul>
+                      </div>
+                  </div>
+              </div>
+                <div class="filter-summary-selectedFilterContainer filter-summary-hidden">
+                  <ul class="filter-summary-filterList"></ul>
+                </div>
+              </section>
+            </div>
+            <div class="search-searchProductsContainer row-base" style="display: -webkit-flex;">
+              <section style="width: 100%;">
+                <ul id="productList" class="results-base">
+                  <!-- This list will be dynamically generated -->
+                </ul>
+                <div class="results-showMoreContainer">
+                  <!-- react-empty: 661 -->
+                </div>
+                <div class="halfcard-leftCardContainer">
+                  <div class="halfcard-leftCardOverlay" style="display: none;"></div>
+                  <div class="halfcard-leftCard  halfcard-narrowLeftCard" style="right: -34%;">
+                    <div class="halfcard-actualContent halfcard-noFooterGap" tabindex="0">
+                      <div class="halfcard-paddedHeader">
+                        <div class="halfcard-actualHeader">Similar Products</div>
+                        <div class="halfcard-closeLeftCard">
+                          <span>✕</span>
+                        </div>
+                      </div>
+                      <div class="halfcard-paddedContent"></div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <footer></footer>
+      <script src="js/header.js"></script>
+      <script src="js/footer.js"></script>
+      <script src="js/Script.js"></script>
+      <script src="js/index.js"></script>
+      <script src="js/product.js"></script>
+
+
+
+    </div>
+  </body>
+</html>
+              

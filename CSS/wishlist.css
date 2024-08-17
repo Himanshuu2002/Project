@@ -1,0 +1,392 @@
+/*! CSS Used from: Embedded */
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+  }
+  img {
+    border-style: none;
+  }
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+  }
+  :after,
+  :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :not(input):not(textarea):not(button) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    user-drag: none;
+    -webkit-user-drag: none;
+  }
+  a {
+    color: #282c3f;
+    text-decoration: none;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  a:focus,
+  a:hover {
+    color: #282c3f;
+    text-decoration: none;
+  }
+  a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+  img {
+    vertical-align: middle;
+  }
+  .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  h4 {
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.1;
+    color: inherit;
+  }
+  h4 {
+    margin-top: 0;
+    margin-bottom: 9px;
+  }
+  h4 {
+    font-size: 17px;
+  }
+  p {
+    margin: 0;
+  }
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .text-md {
+    font-size: 14px;
+  }
+  .text-sm {
+    font-size: 12px;
+  }
+  #mainContent {
+    padding-top: 56px;
+  }
+  .icon {
+    padding: 15px;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .LazyLoad {
+    width: auto !important;
+  }
+  .LazyLoad img {
+    background: #fff;
+    color: #fff;
+  }
+  .clearfix:after,
+  .clearfix:before {
+    content: " ";
+    display: table;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+  .pull-right {
+    float: right !important;
+  }
+  .pull-left {
+    float: left !important;
+  }
+  .ripple-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .ripple-container .ripple {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .web-footerMount {
+    z-index: 5;
+    padding: 20px 20px 30px;
+    background: #f5f5f6;
+  }
+  .web-footerMount .icon {
+    font-size: 27px;
+    color: #535766;
+  }
+  .usefulLinks {
+    color: #696b79;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .usefulLinks > h4 {
+    font-size: 15px;
+    color: #282c3f;
+    padding: 10px 0;
+    font-weight: 700;
+    margin: 10px 0 0;
+    text-align: left;
+  }
+  .usefulLinks > a {
+    text-decoration: none;
+    color: #3e4152;
+    font-size: 13px;
+    text-align: left;
+    line-height: 1.7;
+  }
+  .usefulLinks > a:after {
+    content: "|";
+    color: #3e4152;
+    margin: 10px 5px;
+  }
+  .usefulLinks > a:last-child:after {
+    content: "";
+  }
+  .oShopping {
+    display: block;
+    font-size: 15px !important;
+    color: #282c3f !important;
+    font-weight: 700;
+    text-align: left;
+  }
+  .oShopping:after {
+    content: " " !important;
+  }
+  .socialLinks {
+    color: #696b79;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .socialLinks h4 {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #282c3f;
+    font-weight: 700;
+  }
+  .copyright {
+    color: #94969f;
+    font-size: 9px;
+    margin: 20px 0 0;
+  }
+  .footer-header {
+    color: #3e4152;
+    padding: 10px 18px;
+  }
+  .footer-header .title {
+    line-height: 24px;
+    font-size: 13px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 85%;
+  }
+  .remove-footer {
+    height: 0;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+  .footer-arrow {
+    margin-top: 2px;
+  }
+  #reactPageContent {
+    min-height: calc(100vh - 50px);
+  }
+  @media (min-width: 800px) {
+    #reactPageContent {
+      min-height: calc(100vh - 136px);
+    }
+  }
+  /*! CSS Used from: https://constant.myntassets.com/pwa/assets/css/m-wishlist.d9d89569746b1128850f.css */
+  .products-container {
+    list-style: none;
+    padding: 0 0 8px;
+    overflow: hidden;
+    min-height: 340px;
+  }
+  .products-container img {
+    min-height: 250px;
+  }
+  .products-container .item {
+    float: left;
+    margin: 4px 0;
+    padding: 0 4px;
+    overflow: hidden;
+    min-width: 25%;
+    width: 25%;
+  }
+  @media screen and (max-width: 640px) {
+    .products-container .item {
+      min-width: 50%;
+      width: 50%;
+    }
+  }
+  .products-container .item .va-tb {
+    vertical-align: text-bottom;
+  }
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+    .products-container .item {
+      min-width: 33%;
+      width: 33%;
+    }
+  }
+  .preLoad {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+  }
+  .loaded {
+    opacity: 1;
+  }
+  .product-container {
+    position: relative;
+    text-align: left;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .product-container .LazyLoad {
+    width: auto !important;
+    min-height: 250px;
+  }
+  .product-container .content-wrap {
+    position: relative;
+  }
+  .product-container .price-wrap {
+    padding: 8px 5% 10px;
+    overflow: hidden;
+  }
+  .product-container .price-wrap .heading {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    font-weight: 700;
+    color: #282c3f;
+    margin: 2px 0 3px;
+  }
+  .product-container .price-wrap .price-container {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .product-container .price-wrap .price {
+    font-weight: 700;
+    color: #282c3f;
+    font-size: 13px;
+  }
+  .product-container .price-wrap .orig-price {
+    color: #282c3f;
+    text-decoration: line-through;
+    font-size: 11px;
+    opacity: 0.4;
+  }
+  .product-container .price-wrap .orig-price .strike-rupees {
+    position: relative;
+    bottom: 2px;
+    left: 1px;
+  }
+  .product-container .price-wrap .disc-percent {
+    color: #ff905a;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+  .product-container .price-wrap .mr5 {
+    margin-right: 5px;
+  }
+  .product-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+  .product-container .remove-button-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 36px;
+    width: 36px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .product-container .remove-button {
+    border-radius: 20px;
+    height: 24px;
+    width: 24px;
+    background-color: hsla(0, 0%, 100%, 0.6);
+    border: 1.2px solid #94969f;
+    text-align: center;
+    margin: 0 0 5px;
+    padding: 2px;
+  }
+  .product-container .remove-button path {
+    fill: #94969f;
+  }
+  .product-container .action-button {
+    background: none;
+    padding: 12px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    color: #ff3f6c;
+    border-top: 1px dotted #d3d3d3;
+  }
+  .product-container .move-to-bag {
+    width: 100%;
+    font-weight: 700;
+    display: inline-block;
+  }
+  .va-tb {
+    vertical-align: text-bottom;
+  }
+  /*! CSS Used from: https://constant.myntassets.com/pwa/assets/css/m-saleTimer.244bed2492ba8363c5b7.css */
+  .timer-container {
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+  .timer-container .timer {
+    font-weight: 700;
+    display: inline-block;
+    font-family: helvetica, arial, sans-serif;
+    color: #ff3e6c;
+  }
+  .timer-container .timer.small {
+    font-size: 16px;
+  }
+  .sale-info-container {
+    border-bottom: 1px solid #eaeaec;
+  }
+  .sale-info-container .sb-container {
+    background: #fff;
+    padding: 10px;
+    position: relative;
+  }
+  .sale-info-container .sbTimer {
+    float: right;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    padding-left: 10px;
+  }
+  .sale-info-container .sbLabel {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline;
+  }
+  
